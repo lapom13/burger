@@ -1,0 +1,24 @@
+.vertical-nav {
+    position: fixed;
+    top: 100px;
+    right: 55px;
+}
+
+.vertical-nav__item {
+    @include circle($circle_width, #fff);
+    margin-bottom: 15px;
+}
+
+.vertical-nav__item--is-active::after {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: $circle_width + 10px;
+    height: $circle_width + 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: border 0.2s;
+    transform: translate(  -5px,  -5px);
+    //transform: translate( -50%, -50%);
+    position: absolute;
+}

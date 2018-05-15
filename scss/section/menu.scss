@@ -1,0 +1,80 @@
+.menu {
+    background-image: url("../img/bg/bg_menu.jpg");
+}
+
+.menu-accordeon {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+.title--menu {
+    position: absolute;
+    top: 115px;
+    left: 95px;
+}
+
+.menu-accordeon__item {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.menu-accordeon__item--is-active {
+    .menu-accordeon__trigger-text {
+        color: $yellow;
+    }
+
+    .menu-accordeon__content {
+    width: rem(550px);
+    padding: 60px 30px 0 30px;
+    }
+}
+
+.menu-accordeon__trigger--meat {
+    background: url("../img/content/menu/meat.jpg") center center / cover no-repeat;
+}
+.menu-accordeon__trigger--vegan {
+    background: url("../img/content/menu/vegan.jpg") center center / cover no-repeat;
+}
+.menu-accordeon__trigger--diet {
+    background: url("../img/content/menu/diet.jpg") center center / cover no-repeat;
+}
+
+.menu-accordeon__trigger {
+    position: relative;
+    height: 100%;
+    width: 80px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.menu-accordeon__trigger-text {
+    position: absolute;
+    width: 650px;
+    height: 80px;
+    text-align: left;
+    line-height: rem(80px);
+    transform-origin: 0 0;
+    transform: translate(0, 100%) rotate(-90deg);
+    font-size: rem(40px);
+    color: #fff;
+    padding-left: 40px;
+    bottom: 0;
+    left: 0;
+}
+
+.menu-accordeon__content {
+    position: relative;
+    width: 0;
+    overflow: hidden;
+    background: rgba(47, 50, 52, 0.93);
+}
+
+.menu-accordeon__text {
+    font-weight: 300;
+    font-size: rem(14px);
+    color: #fff;
+}

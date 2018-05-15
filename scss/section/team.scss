@@ -1,0 +1,91 @@
+.team {
+    background-image: url("../img/bg/bg_team.jpg");
+}
+
+.team__wrapper {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: $dark;
+    opacity: 0.929;
+    padding: 5% 0 0 5%; 
+}
+
+.team-accordeon__item {
+    margin-bottom: 37px;
+}
+
+.team-accordeon__details {
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+}
+
+.team-accordeon__details {
+    height: 0;
+    overflow: hidden;
+}
+
+.team-accordeon__link {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Gagalin";
+    font-weight: 400;
+    font-size: rem(14px);
+    
+    &::before {
+        display: inline-block;
+        vertical-align: baseline;
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 7px solid $yellow;
+        z-index: 200;
+        margin-right: 10px;
+    }
+}
+
+.team-accordeon__photo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: url("/img/content/team/team_photo.jpg") center center no-repeat;
+    background-size: cover;
+    margin: 0 20px 0 18px;
+}
+  
+.team-accordeon__textblock {
+    width: rem(240px);
+}
+
+.team-accordeon__post {
+    font-weight: bold;
+    font-size: rem(14px);
+    color: #fff;
+}
+
+.team-accordeon__about {
+    font-weight: 300;
+    font-size: rem(14px);
+    color: #fff;
+}
+
+.team-accordeon__item--is-active {
+    .team-accordeon__link {
+        color: $yellow; 
+    }
+
+    .team-accordeon__details {
+        height: 100px;
+        overflow: auto;
+    }
+
+    .team-accordeon__link::before {
+        transform: rotate(180deg);
+        transition: .3s;
+    }
+}
+

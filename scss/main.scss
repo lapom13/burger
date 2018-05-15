@@ -1,0 +1,21 @@
+// config
+@import "config/mixins.scss";
+@import "config/variables.scss";
+
+//base
+@import "layout/base.scss";
+@import "layout/fonts.scss";
+@import "layout/adjustment.scss";
+
+//sections
+@import "section/best.scss";
+@import "section/first-screen.scss";
+@import "section/reviews.scss";
+@import "section/team.scss";
+@import "section/menu.scss";
+@import "section/map.scss";
+@import "section/form-section.scss";
+
+//blocks
+@import "section/vertical-nav.scss";
+@import "section/footer.scss";
